@@ -14,7 +14,7 @@ func main() {
 		os.Exit(1)
 	}
 	defer resp.Body.Close()
-	//checking conditions
+
 	switch resp.StatusCode {
 	case http.StatusOK:
 		fmt.Println("Weather Information:")
